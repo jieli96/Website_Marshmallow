@@ -1,0 +1,336 @@
+/* Allgmeine Schrift */
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+/* Navbar stylen */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.shift ul li a {
+    position: relative;
+    z-index: 1;
+}
+
+nav.shift ul li a:hover {
+    color: #91640F;
+}
+
+nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: bisque;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+/* logo Name */
+.navbar-brand {
+    font-size: 40px;
+}
+
+.taint {
+
+    color: bisque;
+}
+
+/* Trennung zwischen die gruppe*/
+.navbar,
+.carousel {
+    border-bottom: 2px solid gray;
+
+}
+
+/* Produkte */
+.slider_img {
+    width: 100vw;
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-image {
+
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Login stylen*/
+
+h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#lusername,
+#lpassword {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.anmelden {
+    background-color: bisque;
+    border: none;
+    border-radius: 3px;
+    color: #1b1818;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #3E8E41;
+}
+
+
+p a {
+
+    text-decoration: none;
+}
+
+.login {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    margin: 50px auto;
+}
+
+/* eigene formular stylen */
+#myform {
+    margin-top: 50px;
+    padding: 20px;
+
+}
+
+
+/* formular stylen*/
+h1 {
+    color: bisque;
+}
+
+legend span {
+    float: right;
+}
+
+.custom-container {
+    width: 90%;
+}
+
+
+.form-label {
+    font-size: smaller;
+}
+
+.password-meter-label {
+    font-size: smaller;
+}
+
+fieldset legend {
+    font-size: larger;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+legend::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    /* Hier können Sie den Abstand zwischen Text und Linie anpassen */
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.password-meter-label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    float: left;
+    margin-right: 40px;
+}
+
+
+
+/* Radiobutton stylen*/
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group label input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+
+/* submit button und reset button stylen in formular*/
+.button1,
+.button2 {
+    background-color: bisque;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button1:hover,
+.button2:hover {
+    background-color: #3e8e41;
+}
+
+/* Checkbox Stylen*/
+.agb {
+    float: left;
+    margin-top: 18px;
+    padding-bottom: -100px;
+}
+
+input.agb {
+    transform: scaleX(1.05) scaleY(1.05);
+    /* Ändern Sie den Wert nach Bedarf */
+}
+
+
+.checkbox .form-label {
+    display: inline-block;
+    margin-left: 6px;
+
+}
+
+.agb-label {
+
+    margin-top: 9px;
+}
+
+/* Valid- und Errormessage Stylen */
+.error-message {
+    font-size: 2px;
+}
+
+label.error {
+    color: #f23c3c;
+    font-size: 15px;
+}
+
+label.valid {
+    color: #91d64d;
+    font-size: 15px;
+}
+
+input.error {
+    border-color: #f23c3c;
+    color: #f23c3c;
+}
+
+input.valid {
+    border-color: #91d64d;
+}
+
+.password-meter-message {
+    display: block;
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+/*Willkommen seite Stylen*/
+.mytitel h2 {
+    text-align: center;
+}
+
+/*check icon */
+.fa-check {
+    padding: 10px;
+
+}
+
+h1 {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
